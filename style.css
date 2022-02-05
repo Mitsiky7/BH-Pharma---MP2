@@ -1,0 +1,107 @@
+/* -------------------------------------------------------- GENERAL ---------------------------------------------------------- */
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Roboto Mono', cursive;
+    overflow-x: hidden;
+}
+
+a {
+    font-family: 'Roboto Mono', cursive;
+    text-decoration: none;
+    color: black;
+}
+
+
+/** Configuration de la scrollbar **/
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(80, 80, 80);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #b6b6b6;
+}
+
+
+/* -------------------------------------------------------- NAVBAR ---------------------------------------------------------- */
+
+
+/** Barre de navigation **/
+
+.navbar {
+    position: fixed;
+    display: flex;
+    background-color: #16BBD9;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    color: white;
+    z-index: 100;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar img {
+    float: left;
+}
+
+.navbar a>img {
+    margin-right: 10px;
+}
+
+.navbar a {
+    color: white;
+    font-family: 'Roboto Mono', cursive;
+    font-weight: bold;
+    transition: 1s ease;
+    text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.32);
+}
+
+.navbar a:hover {
+    transition: 0.5s ease;
+    color: gainsboro;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar li {
+    display: inline;
+    font-size: 25px;
+    padding-left: 50px;
+    text-transform: uppercase;
+}
+
+
+/* -------------------------------------------------------- SECTION BANNIERE ---------------------------------------------------------- */
+
+.serum img {
+    width: 400px;
+}
+
+
+/* -------------------------------------------------------- SECTION VENTES ---------------------------------------------------------- */
+
+
+/* -------------------------------------------------------- SECTION A PROPOS ---------------------------------------------------------- */
+
+
+/* -------------------------------------------------------- FOOTER ---------------------------------------------------------- */
+
+.paralleologram {
+    width: 150px;
+    height: 100px;
+    transform: skew(-20deg);
+    background: red;
+}
