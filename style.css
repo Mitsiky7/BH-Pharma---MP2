@@ -1,10 +1,23 @@
 /* -------------------------------------------------------- GENERAL ---------------------------------------------------------- */
 
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Badaboom BB';
+    src: url("/fonts/BADABB__.TTF");
+}
+
 body {
     margin: 0 auto;
     padding: 0;
     font-family: 'Roboto Mono', cursive;
     overflow-x: hidden;
+}
+
+p {
+    margin: 0;
 }
 
 a {
@@ -16,17 +29,17 @@ a {
 
 /** Configuration de la scrollbar **/
 
-::-webkit-scrollbar {
+ ::-webkit-scrollbar {
     width: 6px;
     height: 10px;
 }
 
-::-webkit-scrollbar-thumb {
+ ::-webkit-scrollbar-thumb {
     background-color: rgb(80, 80, 80);
     border-radius: 5px;
 }
 
-::-webkit-scrollbar-track-piece {
+ ::-webkit-scrollbar-track-piece {
     background-color: #b6b6b6;
 }
 
@@ -86,22 +99,201 @@ a {
 
 /* -------------------------------------------------------- SECTION BANNIERE ---------------------------------------------------------- */
 
+.section_banniere {
+    background: url(/images/Component\ 4.svg);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 100%;
+    width: 100%;
+}
+
+.banniere {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-top: 70px;
+}
+
 .serum img {
-    width: 400px;
+    width: 450px;
+    margin-top: 120px;
+}
+
+.right {
+    position: relative;
+}
+
+.right img {
+    width: 800px;
+    position: absolute;
+    top: -480px;
+    left: -100px;
+    transform: rotate(10deg);
+    z-index: 99;
+}
+
+#parallelogram {
+    width: 600px;
+    height: 110px;
+    transform: skew(-20deg);
+    background: #ffff00;
+    border: 3px solid black;
+    margin-bottom: 20px;
+}
+
+#parallelogram p {
+    transform: skew(20deg);
+    padding: 20px 10px 20px 30px;
+}
+
+.warning {
+    font-size: 12px;
+    padding: 30px 0;
+    width: 80%;
+    margin: 0 auto;
+    font-style: italic;
 }
 
 
 /* -------------------------------------------------------- SECTION VENTES ---------------------------------------------------------- */
 
+.ventes {
+    margin-top: 50px;
+}
+
+#parallelogram2 img {
+    width: 100px;
+    transform: skew(10deg);
+    margin-top: -50px;
+    margin-left: 40px;
+    float: left;
+}
+
+#parallelogram2 {
+    width: 750px;
+    height: 80px;
+    transform: skew(-10deg);
+    background: #f15256;
+    border: 3px solid black;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+#parallelogram2 h1 {
+    font-family: 'Badaboom BB';
+    margin-left: 15px;
+    color: #ffff00;
+    font-size: 45px;
+    transform: skew(10deg);
+    letter-spacing: 2px;
+    text-shadow: rgb(0, 0, 0) 4px 0px 0px, rgb(0, 0, 0) 3.87565px 0.989616px 0px, rgb(0, 0, 0) 3.51033px 1.9177px 0px, rgb(0, 0, 0) 2.92676px 2.72656px 0px, rgb(0, 0, 0) 2.16121px 3.36588px 0px, rgb(0, 0, 0) 1.26129px 3.79594px 0px, rgb(0, 0, 0) 0.282949px 3.98998px 0px, rgb(0, 0, 0) -0.712984px 3.93594px 0px, rgb(0, 0, 0) -1.66459px 3.63719px 0px, rgb(0, 0, 0) -2.51269px 3.11229px 0px, rgb(0, 0, 0) -3.20457px 2.39389px 0px, rgb(0, 0, 0) -3.69721px 1.52664px 0px, rgb(0, 0, 0) -3.95997px 0.56448px 0px, rgb(0, 0, 0) -3.97652px -0.432781px 0px, rgb(0, 0, 0) -3.74583px -1.40313px 0px, rgb(0, 0, 0) -3.28224px -2.28625px 0px, rgb(0, 0, 0) -2.61457px -3.02721px 0px, rgb(0, 0, 0) -1.78435px -3.57996px 0px, rgb(0, 0, 0) -0.843183px -3.91012px 0px, rgb(0, 0, 0) 0.150409px -3.99717px 0px, rgb(0, 0, 0) 1.13465px -3.8357px 0px, rgb(0, 0, 0) 2.04834px -3.43574px 0px, rgb(0, 0, 0) 2.83468px -2.82216px 0px, rgb(0, 0, 0) 3.44477px -2.03312px 0px, rgb(0, 0, 0) 3.84068px -1.11766px 0px, rgb(0, 0, 0) 3.9978px -0.132717px 0px;
+}
+
 
 /* -------------------------------------------------------- SECTION A PROPOS ---------------------------------------------------------- */
+
+.section_propos {
+    margin-top: 150px;
+}
+
+.a_propos {
+    position: relative;
+    background-image: url('images/bloc_a_propos.svg');
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 73%;
+    margin-left: 280px;
+    height: 400px;
+}
+
+.a_propos img {
+    width: 270px;
+    margin-left: -80px;
+    margin-top: -110px;
+    float: left;
+}
+
+.a_propos h1 {
+    position: absolute;
+    top: -45px;
+    left: -15px;
+    z-index: 97;
+    font-family: 'Badaboom BB';
+    color: #16BBD9;
+    font-size: 45px;
+    letter-spacing: 2px;
+    text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
+}
+
+.a_propos p {
+    text-transform: uppercase;
+    width: 70%;
+    padding-top: 95px;
+    padding-left: 42px;
+    line-height: 25px;
+}
+
+.certif {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.certif img {
+    width: 20%;
+}
 
 
 /* -------------------------------------------------------- FOOTER ---------------------------------------------------------- */
 
-.paralleologram {
-    width: 150px;
-    height: 100px;
-    transform: skew(-20deg);
-    background: red;
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: url(/images/fond_footer.svg);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    justify-content: space-evenly;
+    background-size: 100%;
+    width: 100%;
+    height: 500px;
+    color: white;
+}
+
+footer a {
+    color: white;
+    line-height: 30px;
+}
+
+footer h2 {
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 black;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+.propos,
+.partenaires,
+.soutenir {
+    margin-top: 9%;
+    padding: 0px 30px;
+    width: 30%;
+}
+
+.soutenir img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
 }
