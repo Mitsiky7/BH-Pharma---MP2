@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"></script>
+    <title>Chart.js line</title>
+
+</head>
+
+<body>
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script>
+        // On déclare les datas :
+        // le label + sa donnée
+        // On peut configurer aussi l'apparance
+        const data = {
+            labels: ['Un peu', 'Beaucoup', 'Passionnément', 'À la folie', 'Pas du tout'],
+            datasets: [{
+                label: 'Rongeurs',
+                data: [12, 19, 3, 5, 0],
+                backgroundColor: 'rgba(255, 99, 132, 1)',
+                borderColor: 'rgba(255, 99, 132, 1)',
+            }, {
+                label: 'Primates',
+                data: [15, 22, 6, 8, 0],
+                backgroundColor: 'rgba(54, 162, 235, 1)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+            }, {
+                label: 'Poissons',
+                data: [14, 18, 24, 3, 0],
+                backgroundColor: 'rgba(255, 206, 86, 1)',
+                borderColor: 'rgba(255, 206, 86, 1)',
+            }, {
+                label: 'Chiens',
+                data: [14, 18, 24, 3, 0],
+                backgroundColor: 'rgba(75, 192, 192, 1)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+            }, {
+                label: 'Chats',
+                data: [14, 18, 24, 3, 0],
+                backgroundColor: 'rgba(153, 102, 255, 1)',
+                borderColor: 'rgba(153, 102, 255, 1)',
+            }, {
+                label: 'Animaux de rente',
+                data: [14, 18, 24, 3, 0],
+                backgroundColor: 'rgba(255, 159, 64, 1)',
+                borderColor: 'rgba(255, 159, 64, 1)',
+            }, ]
+        };
+
+        // On configure notre chart
+        const config = {
+            type: 'bar',
+            data: data,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Chart.js Bar Chart'
+                    }
+                }
+            },
+        };
+        // On affiche le chart dans l'élément avec l'ID correspondant
+        var myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+    </script>
+</body>
+
+</html>
