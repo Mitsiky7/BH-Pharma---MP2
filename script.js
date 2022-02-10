@@ -1,6 +1,5 @@
-// On déclare les datas :
-// le label + sa donnée
-// On peut configurer aussi l'apparance
+// Déclaration des données 
+// Configuration de l'apparence
 
 const data = {
     labels: ['Un peu', 'Beaucoup', 'Passionnément', 'À la folie', 'Pas du tout'],
@@ -37,7 +36,7 @@ const data = {
     }, ]
 };
 
-// On configure notre chart
+// Configuration de la chart. 
 const config = {
     type: 'bar',
     data: data,
@@ -72,7 +71,7 @@ const config = {
         }
     },
 };
-// On affiche le chart dans l'élément avec l'ID correspondant
+// Affichage du document
 var myChart = new Chart(
     document.getElementById('myChart'),
     config
