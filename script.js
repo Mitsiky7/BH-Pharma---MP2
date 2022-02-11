@@ -6,23 +6,23 @@ const data = {
     datasets: [{
         label: 'Rongeurs',
         data: [1924354, 3168485, 1178189, 442532, 0],
-        backgroundColor: 'rgba(255, 99, 132, 1)',
-        borderColor: 'rgba(255, 99, 132, 1)',
+        backgroundColor: 'rgba(241, 82, 86, 1)',
+        borderColor: 'rgba(241, 82, 86, 1)',
     }, {
         label: 'Primates',
         data: [10605, 5367, 954, 309, 0],
-        backgroundColor: 'rgba(54, 162, 235, 1)',
-        borderColor: 'rgba(54, 162, 235, 1)',
+        backgroundColor: 'rgba(22, 187, 217, 1)',
+        borderColor: 'rgba(22, 187, 217, 1)',
     }, {
         label: 'Poissons',
         data: [1050635, 178630, 230646, 47289, 0],
-        backgroundColor: 'rgba(255, 206, 86, 1)',
-        borderColor: 'rgba(255, 206, 86, 1)',
+        backgroundColor: 'rgba(255, 255, 0, 1)',
+        borderColor: 'rgba(255, 255, 0, 1)',
     }, {
         label: 'Chiens',
         data: [11726, 7372, 1065, 490, 0],
-        backgroundColor: 'rgba(75, 192, 192, 1)',
-        borderColor: 'rgba(75, 192, 192, 1)',
+        backgroundColor: 'rgba(89, 232, 79, 1)',
+        borderColor: 'rgba(89, 232, 79, 1)',
     }, {
         label: 'Chats',
         data: [3145, 1234, 41, 42, 0],
@@ -31,8 +31,8 @@ const data = {
     }, {
         label: 'Animaux de rente',
         data: [214075, 128845, 16990, 29765, 0],
-        backgroundColor: 'rgba(255, 159, 64, 1)',
-        borderColor: 'rgba(255, 159, 64, 1)',
+        backgroundColor: 'rgba(255, 128, 0, 1)',
+        borderColor: 'rgba(255, 128, 0, 1)',
     }, ]
 };
 
