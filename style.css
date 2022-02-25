@@ -109,7 +109,7 @@ a {
 /* -------------------------------------------------------- SECTION BANNIERE ---------------------------------------------------------- */
 
 .section_banniere {
-    background: url(/images/Component\ 4.svg);
+    background: url(images/Component\ 4.svg);
     background-repeat: no-repeat;
     background-origin: content-box;
     background-size: cover;
@@ -406,7 +406,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background: url(/images/fond_footer.svg);
+    background: url(images/fond_footer.svg);
     background-repeat: no-repeat;
     background-origin: content-box;
     justify-content: space-evenly;
