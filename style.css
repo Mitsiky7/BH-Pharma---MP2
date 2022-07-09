@@ -142,6 +142,27 @@ a {
 }
 
 
+/*Logo*/
+
+.right img {
+    position: absolute;
+    animation: movelogo 5s ease-in-out infinite;
+    margin-top: -330px;
+}
+
+@keyframes movelogo {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
 /*Bloc droite*/
 
 .right {
